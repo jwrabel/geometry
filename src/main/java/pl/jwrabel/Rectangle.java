@@ -9,6 +9,9 @@ public class Rectangle {
 	private int x2;
 	private int y2;
 
+//	private Point first;
+//	private Point second;
+
 	public Rectangle(int x1, int y1, int x2, int y2) {
 		this.x1 = x1;
 		this.y1 = y1;
