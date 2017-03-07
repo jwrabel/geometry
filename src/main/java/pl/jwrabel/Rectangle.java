@@ -52,26 +52,50 @@ public class Rectangle {
 	// TODO
 	@Override
 	public boolean equals(Object obj) {
-		return false;
+		if (obj == this) {
+			return true;
+		}
+		if (obj.getClass() != getClass()) {
+			return false;
+		}
+
+		Rectangle rectangle = (Rectangle) obj;
+
+		if (x1 != rectangle.x1) {
+			return false;
+		}
+		if (x2 != rectangle.x2) {
+			return false;
+		}
+		if (y1 != rectangle.y1) {
+			return false;
+		}
+
+//		if (y2 != rectangle.y2) {
+//			return false;
+//		}
+//		return true;
+
+		return y2 == rectangle.y2;
 	}
 
 	// TODO
-	public double centersDistance(Rectangle rectangle){
+	public double centersDistance(Rectangle rectangle) {
 		return 0d;
 	}
 
 	// TODO
-	public boolean intersects(Rectangle rectangle){
+	public boolean intersects(Rectangle rectangle) {
 		return false;
 	}
 
 	// TODO
-	public Rectangle common(Rectangle rectangle){
+	public Rectangle common(Rectangle rectangle) {
 		return null;
 	}
 
 	// TODO
-	public double area(){
+	public double area() {
 		return 0;
 	}
 }
