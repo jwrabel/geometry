@@ -55,6 +55,11 @@ public class Rectangle {
 		if (obj == this) {
 			return true;
 		}
+
+		if(obj == null){
+			return false;
+		}
+
 		if (obj.getClass() != getClass()) {
 			return false;
 		}
